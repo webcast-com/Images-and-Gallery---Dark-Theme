@@ -1,0 +1,488 @@
+<html class="dark" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Images and Videos Gallery - Dark Theme
+  </title>
+  <script>
+   tailwind.config = {
+    darkMode: "class",
+    theme: {
+     extend: {},
+    },
+    variants: {},
+    plugins: [],
+   };
+  </script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+    font-family: "Inter", sans-serif;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-900 dark:bg-gray-900 min-h-screen flex flex-col text-gray-300 dark:text-gray-300">
+  <header class="bg-gray-800 dark:bg-gray-900 shadow sticky top-0 z-50 border-b border-gray-700">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <div class="flex items-center space-x-3">
+     <img alt="Company logo with stylized letter G in blue and white" class="h-10 w-10 rounded" src="https://placehold.co/40x40/png?text=Logo"/>
+     <h1 class="text-xl font-semibold text-gray-100 dark:text-gray-100">
+      Media Gallery
+     </h1>
+    </div>
+    <nav class="hidden md:flex space-x-8 font-medium">
+     <a class="hover:text-blue-400 transition text-gray-300 dark:text-gray-300" href="#images">
+      Images
+     </a>
+     <a class="hover:text-blue-400 transition text-gray-300 dark:text-gray-300" href="#videos">
+      Videos
+     </a>
+     <a class="hover:text-blue-400 transition text-gray-300 dark:text-gray-300" href="#blog">
+      Blog
+     </a>
+     <a class="hover:text-blue-400 transition text-gray-300 dark:text-gray-300" href="#about">
+      About
+     </a>
+     <a class="hover:text-blue-400 transition text-gray-300 dark:text-gray-300" href="#contact">
+      Contact
+     </a>
+    </nav>
+    <button aria-label="Open menu" class="md:hidden text-gray-300 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-400" id="mobile-menu-button">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav aria-label="Mobile menu" class="md:hidden hidden bg-gray-800 dark:bg-gray-900 border-t border-gray-700" id="mobile-menu">
+    <a class="block px-4 py-3 hover:bg-gray-700 dark:hover:bg-gray-800 border-b border-gray-700 text-gray-300 dark:text-gray-300" href="#images">
+     Images
+    </a>
+    <a class="block px-4 py-3 hover:bg-gray-700 dark:hover:bg-gray-800 border-b border-gray-700 text-gray-300 dark:text-gray-300" href="#videos">
+     Videos
+    </a>
+    <a class="block px-4 py-3 hover:bg-gray-700 dark:hover:bg-gray-800 border-b border-gray-700 text-gray-300 dark:text-gray-300" href="#blog">
+     Blog
+    </a>
+    <a class="block px-4 py-3 hover:bg-gray-700 dark:hover:bg-gray-800 border-b border-gray-700 text-gray-300 dark:text-gray-300" href="#about">
+     About
+    </a>
+    <a class="block px-4 py-3 hover:bg-gray-700 dark:hover:bg-gray-800 text-gray-300 dark:text-gray-300" href="#contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+   <section class="mb-16" id="images">
+    <h2 class="text-3xl font-semibold text-gray-100 dark:text-gray-100 mb-6">
+     Image Gallery
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" role="list">
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size Mountain Landscape image" href="https://placehold.co/1200x800/png?text=Mountain+Landscape+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="A breathtaking mountain landscape with snow-capped peaks under a clear blue sky" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Mountain+Landscape"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Mountain Landscape
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Snowy peaks and clear skies
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size City Skyline at Night image" href="https://placehold.co/1200x800/png?text=City+Skyline+at+Night+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="City skyline at night with illuminated skyscrapers reflecting on a calm river" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=City+Skyline+at+Night"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        City Skyline at Night
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Bright lights and reflections
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size Forest Trail image" href="https://placehold.co/1200x800/png?text=Forest+Trail+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="A peaceful forest trail surrounded by tall green trees and dappled sunlight" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Forest+Trail"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Forest Trail
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Nature walk in the woods
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size Desert Dunes image" href="https://placehold.co/1200x800/png?text=Desert+Dunes+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="Golden desert dunes under a bright sun with clear blue sky and rippled sand patterns" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Desert+Dunes"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Desert Dunes
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Sunlit sand waves
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size Ocean Sunset image" href="https://placehold.co/1200x800/png?text=Ocean+Sunset+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="Sunset over the ocean with orange and pink hues reflecting on gentle waves" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Ocean+Sunset"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Ocean Sunset
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Warm evening colors
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size Snowy Village image" href="https://placehold.co/1200x800/png?text=Snowy+Village+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="A small snowy village with cozy houses covered in snow and smoke rising from chimneys" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Snowy+Village"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Snowy Village
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Winter wonderland
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size Flower Field image" href="https://placehold.co/1200x800/png?text=Flower+Field+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="A vast field of colorful wildflowers under a bright sunny sky with fluffy clouds" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Flower+Field"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Flower Field
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Blooming nature
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900">
+      <a aria-label="View full size Waterfall image" href="https://placehold.co/1200x800/png?text=Waterfall+Full+Size" rel="noopener noreferrer" target="_blank">
+       <img alt="A powerful waterfall cascading down rocky cliffs surrounded by lush green forest" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Waterfall"/>
+      </a>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Waterfall
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Nature's power
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mb-16" id="videos">
+    <h2 class="text-3xl font-semibold text-gray-100 dark:text-gray-100 mb-6">
+     Video Gallery
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <div class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+      <video aria-label="Timelapse video of a bustling city skyline from day to night" class="w-full h-48 object-cover" controls="" poster="https://placehold.co/600x400/png?text=City+Timelapse+Thumbnail">
+       <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        City Timelapse
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Day to night transition
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+      <video aria-label="Video of ocean waves crashing on a rocky shore under a cloudy sky" class="w-full h-48 object-cover" controls="" poster="https://placehold.co/600x400/png?text=Ocean+Waves+Thumbnail">
+       <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Ocean Waves
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Relaxing sea sounds
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+      <video aria-label="Video of a person walking through a dense green forest with sunlight filtering through trees" class="w-full h-48 object-cover" controls="" poster="https://placehold.co/600x400/png?text=Forest+Walk+Thumbnail">
+       <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Forest Walk
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Peaceful nature stroll
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+      <video aria-label="Video showing gentle snowfall in a quiet winter forest" class="w-full h-48 object-cover" controls="" poster="https://placehold.co/600x400/png?text=Snowfall+Thumbnail">
+       <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Snowfall
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Winter calm
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+      <video aria-label="Video of a desert sunset with orange sky and sand dunes" class="w-full h-48 object-cover" controls="" poster="https://placehold.co/600x400/png?text=Desert+Sunset+Thumbnail">
+       <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Desert Sunset
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Golden hour in the desert
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+      <video aria-label="Video of a waterfall cascading down rocks surrounded by green forest" class="w-full h-48 object-cover" controls="" poster="https://placehold.co/600x400/png?text=Waterfall+Thumbnail">
+       <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"/>
+       Your browser does not support the video tag.
+      </video>
+      <div class="p-4">
+       <h3 class="text-lg font-semibold text-gray-100 dark:text-gray-100">
+        Waterfall
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 text-sm mt-1">
+        Nature's power in motion
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mb-16" id="blog">
+    <h2 class="text-3xl font-semibold text-gray-100 dark:text-gray-100 mb-6 text-center">
+     Latest Blog Posts
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <article class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+      <img alt="Close-up of a camera lens with bokeh lights in the background" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Camera+Lens+Blog+Image"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-gray-100 dark:text-gray-100 mb-2">
+        Capturing Stunning Landscapes: Tips and Tricks
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 flex-grow mb-4">
+        Learn how to take breathtaking landscape photos with simple techniques
+        and the right equipment.
+       </p>
+       <a class="mt-auto inline-block text-blue-400 hover:text-blue-500 font-semibold transition" href="#" tabindex="0">
+        Read More →
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+      <img alt="A person editing video footage on a laptop with multiple video clips on screen" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Video+Editing+Blog+Image"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-gray-100 dark:text-gray-100 mb-2">
+        Video Editing Basics for Beginners
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 flex-grow mb-4">
+        Discover essential video editing tips to create professional-looking
+        videos with ease.
+       </p>
+       <a class="mt-auto inline-block text-blue-400 hover:text-blue-500 font-semibold transition" href="#" tabindex="0">
+        Read More →
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+      <img alt="A serene sunset over a lake with reflections of trees and sky" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Sunset+Lake+Blog+Image"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-gray-100 dark:text-gray-100 mb-2">
+        Best Locations for Nature Photography
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 flex-grow mb-4">
+        Explore some of the most beautiful spots around the world to capture
+        nature’s wonders.
+       </p>
+       <a class="mt-auto inline-block text-blue-400 hover:text-blue-500 font-semibold transition" href="#" tabindex="0">
+        Read More →
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+      <img alt="A photographer setting up a tripod on a rocky cliff during sunrise" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Sunrise+Photography+Blog+Image"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-gray-100 dark:text-gray-100 mb-2">
+        Sunrise Photography: Capturing the Perfect Moment
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 flex-grow mb-4">
+        Tips for shooting stunning sunrise photos with the right timing and
+        settings.
+       </p>
+       <a class="mt-auto inline-block text-blue-400 hover:text-blue-500 font-semibold transition" href="#" tabindex="0">
+        Read More →
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+      <img alt="A drone flying over a forest with autumn colors" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Drone+Photography+Blog+Image"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-gray-100 dark:text-gray-100 mb-2">
+        Drone Photography: A New Perspective
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 flex-grow mb-4">
+        How to use drones to capture unique aerial shots and videos.
+       </p>
+       <a class="mt-auto inline-block text-blue-400 hover:text-blue-500 font-semibold transition" href="#" tabindex="0">
+        Read More →
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+      <img alt="Editing photos on a computer with color grading tools visible" class="w-full h-48 object-cover" loading="lazy" src="https://placehold.co/600x400/png?text=Photo+Editing+Blog+Image"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-gray-100 dark:text-gray-100 mb-2">
+        Photo Editing Techniques to Enhance Your Images
+       </h3>
+       <p class="text-gray-400 dark:text-gray-400 flex-grow mb-4">
+        Learn about color correction, retouching, and other editing tips to
+        improve your photos.
+       </p>
+       <a class="mt-auto inline-block text-blue-400 hover:text-blue-500 font-semibold transition" href="#" tabindex="0">
+        Read More →
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="mb-16 max-w-3xl mx-auto text-center" id="about">
+    <h2 class="text-3xl font-semibold text-gray-100 dark:text-gray-100 mb-6">
+     About This Gallery
+    </h2>
+    <p class="text-gray-400 dark:text-gray-400 text-lg leading-relaxed">
+     Welcome to the Media Gallery, a curated collection of stunning images and
+     captivating videos showcasing the beauty of nature, urban life, and more.
+     Our goal is to inspire and delight visitors with high-quality media
+     content that is fully responsive and accessible on all devices.
+    </p>
+    <p class="text-gray-400 dark:text-gray-400 text-lg leading-relaxed mt-4">
+     We continuously update our gallery with fresh content and insightful blog
+     posts to help you improve your photography and videography skills.
+     Whether you are a beginner or a professional, you'll find valuable
+     resources and inspiration here.
+    </p>
+   </section>
+   <section class="max-w-3xl mx-auto" id="contact">
+    <h2 class="text-3xl font-semibold text-gray-100 dark:text-gray-100 mb-6 text-center">
+     Contact Us
+    </h2>
+    <form action="#" aria-label="Contact form" class="bg-gray-800 dark:bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST">
+     <div class="mb-4">
+      <label class="block text-gray-300 dark:text-gray-300 text-sm font-bold mb-2" for="name">
+       Name
+      </label>
+      <input class="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-300 dark:text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent bg-gray-700 dark:bg-gray-800" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-300 dark:text-gray-300 text-sm font-bold mb-2" for="email">
+       Email
+      </label>
+      <input class="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-300 dark:text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent bg-gray-700 dark:bg-gray-800" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div class="mb-6">
+      <label class="block text-gray-300 dark:text-gray-300 text-sm font-bold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-300 dark:text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent resize-none bg-gray-700 dark:bg-gray-800" id="message" name="message" placeholder="Write your message here..." required="" rows="4"></textarea>
+     </div>
+     <div class="flex items-center justify-center">
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition" type="submit">
+       Send Message
+      </button>
+     </div>
+    </form>
+   </section>
+  </main>
+  <footer class="bg-gray-800 dark:bg-gray-900 border-t border-gray-700 py-6">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 dark:text-gray-400 text-sm">
+    © 2024 Media Gallery. All rights reserved.
+   </div>
+  </footer>
+  <!-- Ad Popup -->
+  <div aria-labelledby="ad-popup-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-60 hidden" id="ad-popup" role="dialog">
+   <div class="bg-gray-800 dark:bg-gray-900 rounded-lg shadow-lg max-w-lg w-full mx-4 p-6 relative">
+    <button aria-label="Close advertisement" class="absolute top-3 right-3 text-gray-400 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded" id="ad-close-btn">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-2xl font-semibold text-gray-100 dark:text-gray-100 mb-4 text-center" id="ad-popup-title">
+     Sponsored Ad
+    </h3>
+    <img alt="Advertisement showing a modern camera with promotional text" class="w-full rounded mb-4" loading="lazy" src="https://placehold.co/600x300/png?text=Buy+the+Latest+Camera+Now!"/>
+    <p class="text-gray-400 dark:text-gray-400 mb-6 text-center">
+     Upgrade your photography gear with the latest camera models. Limited time
+     offer!
+    </p>
+    <div class="flex justify-center">
+     <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition" href="#" rel="noopener noreferrer" target="_blank">
+      Shop Now
+     </a>
+    </div>
+   </div>
+  </div>
+  <script>
+   const menuButton = document.getElementById("mobile-menu-button");
+   const mobileMenu = document.getElementById("mobile-menu");
+   const adPopup = document.getElementById("ad-popup");
+   const adCloseBtn = document.getElementById("ad-close-btn");
+
+   menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+   });
+
+   // Show ad popup after 3 seconds
+   window.addEventListener("load", () => {
+    setTimeout(() => {
+     adPopup.classList.remove("hidden");
+    }, 3000);
+   });
+
+   // Close ad popup on button click
+   adCloseBtn.addEventListener("click", () => {
+    adPopup.classList.add("hidden");
+   });
+
+   // Close ad popup on outside click
+   adPopup.addEventListener("click", (e) => {
+    if (e.target === adPopup) {
+     adPopup.classList.add("hidden");
+    }
+   });
+
+   // Close ad popup on Escape key press
+   document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !adPopup.classList.contains("hidden")) {
+     adPopup.classList.add("hidden");
+    }
+   });
+  </script>
+ </body>
+</html>
