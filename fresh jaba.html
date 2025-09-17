@@ -39,6 +39,18 @@
       <div class="card"><img src="images/jaba6.jpg" alt="Leaves in basin" onclick="openLightbox(this.src)"></div>
       <div class="card"><img src="images/jaba5.jpg" alt="Leaves closeup" onclick="openLightbox(this.src)"></div>
     </section>
+    
+    <!-- Netlify Contact Form with Honeypot -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="success.html">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
   <footer>
